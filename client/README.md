@@ -61,11 +61,11 @@ To start the development server:
 
 The frontend communicates with the following API endpoints:
 
-- Sign In: POST /signin
-  - Body: `{ "email": "<email>", "password": "<password>" }`
-  - Response: `{ "accessToken": "<token>", "refreshToken": "<token>", "user": { "id": "<id>", "name": "<name>", "email": "<email>" } }`
+- Sign In: `POST /signin`
+  - Body: { "email": "<email>", "password": "<password>" }
+  - Response: { "accessToken": "<token>", "refreshToken": "<token>", "user": { "id": "<id>", "name": "<name>", "email": "<email>" } }
 
-- Register: POST /register
+- Register: `POST /register`
   - Body: { "name": "<name>", "email": "<email>", "password": "<password>" }
   - Response: { "message": "User registered successfully!" }
 
@@ -73,8 +73,8 @@ The frontend communicates with the following API endpoints:
   - Headers: refresh-token: <token>
   - Response: { "accessToken": "<token>", "refreshToken": "<token>" }
   
-- Profile: GET /profile
-  - Headers: `Authorization: Bearer <access-token>`
+- Profile: `GET /profile`
+  - Headers: Authorization: Bearer <access-token>
   - Response: { "user": { "id": "<id>", "name": "<name>", "email": "<email>" } }
 
 
