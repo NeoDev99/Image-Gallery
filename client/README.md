@@ -41,8 +41,8 @@ Before running the application, ensure that you have configured the environment 
     2. **Add the following variables** to your `.env` file:
 
     ```env
-    VITE_CLERK_PUBLISHABLE_KEY=<your-clerk-publishable-key>
-    VITE_API_URL=<your-api-url> # URL of your backend API
+    REACT_APP_API_ACCESS_KEY=<api-access-key>
+    CLERK_FRONTEND_API=<pk_test_api>
     ```
 
 
