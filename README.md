@@ -55,7 +55,7 @@ cd client
 npm start
 
 cd ../server
-npm start
+nodemon server.js
 ```
 
 5. Open your browser and visit http://localhost:3000 to see the application.
